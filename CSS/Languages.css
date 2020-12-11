@@ -1,0 +1,161 @@
+/*MAIN BODY*/
+body
+{
+  background-color: #c4c4be;
+}
+
+
+/*MENU BAR AND HEADER*/
+.headerDiv
+{
+  background-color:#18307c;
+}
+
+.navBar a:hover, .dropDown:hover .drpButton
+{
+  background-color:#888585;
+}
+.dropContent a:hover
+{
+  background-color:#888585;
+}
+
+.navBar a
+{
+  color:#0b313c;
+}
+
+.dropDown .drpButton
+{
+  color:#0b313c;
+}
+
+.dropContent
+{
+  background-color:#595959 ;
+  box-shadow: ;
+}
+
+.dropContent a
+{
+  color:#0b313c;
+}
+
+
+/*MAIN CONTENT BOX*/
+.containerDiv
+{
+  display: flex;
+  height:100vh;
+  min-height: 500px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*TEXT CONTENT BOX*/
+.textDiv
+{
+  display: flex;
+  justify-content: center;
+}
+
+.textDiv p
+{
+  margin:0 20vw 100px 20vw;
+  color: #403b3b;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+
+/*LANGUAGE TITLE BOX*/
+.captionDiv
+{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+}
+
+.captionDiv h3
+{
+  position: relative;
+  top: 45px;
+  margin: 0 31px;
+}
+
+.captionDiv h3:nth-child(1)
+{
+  right:11px;
+}
+
+.captionDiv h3:nth-child(5)
+{
+  left:12px;
+}
+
+.captionDiv h3:nth-child(odd)
+{
+  padding:0 5px;
+  position: relative;
+}
+
+.captionDiv h3:nth-child(even)
+{
+  padding:0;
+}
+
+
+/*DESK AND LAPTOPS BOX*/
+.screenDiv
+{
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+.desktopDiv
+{
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+[src^="GIF/Coding"]
+{
+  width:83px;
+  height:51px;
+  position: relative;
+  top: 53px;
+  margin:0 21px;
+  align-self: flex-end;
+  z-index: 2;
+}
+
+[src^="Images/laptop"]
+{
+  width:125px;
+  padding:0 5px;
+  align-self: flex-end;
+  z-index: 3;
+}
+
+[src^="Images/desk"]
+{
+  width:800px;
+  min-height: 315px;
+  position: relative;
+  top:-200px;
+}
+
+
+/*CAT*/
+[src^="GIF/SleepingCat"]
+{
+  position: relative;
+  bottom: -110px;
+  left:4vw;
+  width:150px;
+}

@@ -1,0 +1,18 @@
+
+/*MAIN CONTENT BOX*/
+.contentDiv
+{
+  padding: 5vh 15vw;
+}
+
+.contentDiv h1
+{
+  padding-bottom: 3vh;
+  color: #1d3232;
+}
+
+.contentDiv p
+{
+  font-size: 1.1em;
+  color: #1d3232;
+}

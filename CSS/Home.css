@@ -1,0 +1,233 @@
+/*MAIN BODY*/
+
+/*Video Background*/
+#myVideo
+{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+
+/*NAVIGATION MENU*/
+.navBar a:hover, .dropDown:hover .drpButton
+{
+  background-color: rgba(41, 170, 164, 0.47);
+}
+.dropContent a:hover
+{
+  background-color: rgba(41, 170, 164, 0.47);
+}
+
+.navBar a
+{
+  color:white;
+}
+
+.dropDown .drpButton
+{
+  color:white;
+}
+
+.dropContent a
+{
+  color:white;
+}
+
+/*MAIN CONTENT*/
+.containerDiv
+{
+  display: flex;
+  flex-wrap:nowrap;
+  height:82.6vh;
+}
+
+.innerDiv
+{
+  display: flex;
+  align-self: flex-end;
+  align-items: stretch;
+}
+
+
+/*WELCOME TO MY WEBPAGE BOX*/
+.welcomeDiv
+{
+  min-width: 100px;
+  width:50vw;
+  background-color: rgb(68 74 160 / 39%);
+}
+
+.welcomeDiv p, .welcomeDiv ul
+{
+  font-size: 2vmin;
+}
+
+h3
+{
+  font-size: calc(12px + 5vmin);
+  text-align: center;
+}
+
+.welcomeDiv p
+{
+  text-align: center;
+}
+
+
+/*ABOUT ME BOX*/
+.profileDiv
+{
+  display: flex;
+  min-width: 100px;
+  width:30vw;
+  background-color: #d2783d8c;
+  align-items:center;
+  flex-direction: column;
+}
+
+.profileDiv > div
+{
+  width:9vw;
+  opacity: 0.8;
+}
+
+.profileDiv li
+{
+  font-size: 2vmin;
+}
+
+#profilePic
+{
+  width:100%;
+}
+
+.profileDiv ul
+{
+  list-style: none;
+}
+.profileDiv ol
+{
+  list-style: none;
+  content:none;
+}
+
+#name:before
+{
+  content: 'Name: ';
+}
+#age:before
+{
+  content: 'Age: ';
+}
+#occupation:before
+{
+  content: 'Occupation: ';
+}
+
+
+/*CONTACT ME BOX*/
+.contactDiv
+{
+  min-width: 100px;
+  width:20vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: rgb(88 213 123 / 39%);
+}
+
+input[type=text], select, textarea
+{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.btnOpen
+{
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  width: 100%;
+  align-self: flex-end;
+ }
+
+
+/*CONTACT ME POP-UP BOX*/
+.popUpForm
+{
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.contactForm
+{
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.contactDiv p
+{
+  padding:2vmax 2vmax 0 2vmax;
+  text-align: center;
+  font-size: 2vmin;
+}
+
+.contactForm input[type=text], .contactForm input[type=password]
+{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.contactForm input[type=text]:focus
+{
+  background-color: #ddd;
+  outline: none;
+}
+
+.contactForm .btn
+{
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.contactForm .btnClose
+{
+  background-color: red;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.contactForm .btn:hover, .btnOpen:hover
+{
+  opacity: 1;
+}

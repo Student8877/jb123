@@ -1,0 +1,149 @@
+/*MAIN BODY CONTENT*/
+body
+{
+  background-color:rgb(15, 17, 15);
+}
+
+
+/*NAVIGATION MENU AND HEADER*/
+.headerDiv
+{
+  background-color:#a13838;
+}
+
+.navBar a:hover, .dropDown:hover .drpButton
+{
+  background-color:#888585;
+}
+.dropContent a:hover
+{
+  background-color:#888585;
+}
+
+.navBar a
+{
+  color:#0b313c;
+}
+
+.dropDown .drpButton
+{
+  color:#0b313c;
+}
+
+.dropContent
+{
+  background-color:#595959 ;
+  box-shadow: ;
+}
+
+.dropContent a
+{
+  color:#0b313c;
+}
+
+
+/*MAIN TEXT BOX*/
+.descriptDiv
+{
+  width: 20vw;
+}
+
+.descriptDiv
+{
+  display: inline;
+  text-align: center;
+}
+
+.descriptDiv p
+{
+  color: gray;
+}
+
+
+/*GALLERY SLIDESHOW*/
+.galleryDiv
+{
+  position: relative;
+}
+
+.slidesDiv
+{
+  display: none;
+}
+
+#largeImage
+{
+  position: relative;
+  left:30%;
+  width:40%;
+}
+
+#smallImage
+{
+  width:100%;
+}
+
+.row
+{
+  position: relative;
+  left:25%;
+  width:75%;
+}
+.cursor
+{
+  cursor: pointer;
+}
+
+.previous, .next
+{
+  cursor:pointer;
+  position: absolute;
+  top: 25%;
+  width:auto;
+  padding:2vw;
+  color:white;
+  font-weight: bold;
+  font-size: 8vw;
+}
+
+.next
+{
+  right: 0;
+  border-radius: 3px 0 0 3px; 
+}
+
+.previous:hover, .next:hover
+{
+  background-color: rgba(0,0,0,0.8);
+}
+
+.imageCaption
+{
+  text-align: center;
+  background-color: rgb(15, 17, 15);
+  padding:2px 16px;
+  color:white;
+}
+
+.row::after
+{
+  content:"";
+  display: table;
+  clear:both;
+}
+
+.column
+{
+  float:left;
+  width:16.66%;
+}
+
+.demo
+{
+  opacity: 0.6;
+}
+
+.active, .demo:hover
+{
+  opacity: 1;
+}

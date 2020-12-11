@@ -1,0 +1,153 @@
+/*MAIN BODY CONTENT*/
+body
+{
+  background-color:rgb(204 202 231);
+}
+
+
+/*NAVIGATION MENU AND HEADER*/
+.headerDiv
+{
+  background-color:#10663b94;
+}
+
+.navBar
+{
+  background-color:#3b741ec7;
+}
+
+.navBar a:hover, .dropDown:hover .drpButton
+{
+  background-color:#3f6517;
+}
+.dropContent a:hover
+{
+  background-color:#3f6517;
+}
+
+.navBar a
+{
+  color:#0b313c;
+}
+
+.dropDown .drpButton
+{
+  color:#0b313c;
+}
+
+.dropContent a
+{
+  background-color: #3b741ec7;
+  color:#0b313c;
+}
+
+
+/*MAIN CONTENT BOX*/
+.flexDiv
+{
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*IMAGES*/
+img
+{
+  flex:1;
+  width:30vw;
+  height:100%;
+}
+
+
+/*MULTIPLE SECTIONS*/
+.firstSec, .secondSec, .thirdSec, .fourthSec
+{
+  display: flex;
+  box-sizing: content-box;
+  width:97.6vw;
+  height:40vh;
+  min-width:300px ;
+  min-height: 300px;
+  font-size:3vmin;
+  padding: 270px 10px;
+}
+
+.firstSec p, .secondSec p
+{
+  text-align: center;
+  margin: 0 5vw;
+  color:#091215;
+}
+
+
+/*FIRST SECTION*/
+.firstSec
+{
+  flex-direction: row;
+  background-color: #2e4a1a;
+}
+
+#fishing
+{
+  margin-top: -20vh;
+}
+
+#hiking
+{
+  margin-top: 20vh;
+}
+
+
+/*SECOND SECTION*/
+.secondSec
+{
+  flex-direction: row;
+  background-color: rgb(158 158 159 / 55%)
+}
+
+#lockpick
+{
+  margin-top: -20vh;
+}
+
+#puzzles
+{
+  margin-top: 20vh;
+}
+
+/*THIRD SECTION*/
+.thirdSec
+{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+
+.thirdSec p
+{
+  text-align: center;
+  margin: 15vh 30vw 15vh 30vw;
+  color:#c5ed25;
+}
+
+#music
+{
+  width:70vw;
+  height:58vh;
+}
+
+
+/*FOURTH SECTION*/
+
+.fourthSec
+{
+  background-image: url("../Background/food.png");
+}
+
+.fourthSec p
+{
+  margin:5vw 8vw 0 40vw;
+  text-align: center;
+  color:white;
+}

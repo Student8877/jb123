@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Jamie's Website</title>
+  <link rel="stylesheet" href="CSS/Master.css">
+  <link rel="stylesheet" href="CSS/Projects.css">
+
+</head>
+
+<body>
+  <div class="headerDiv">
+    <h1>Jamie Braaksma</h1>
+  </div>
+
+  <div class="navBar">
+    <a href="index.html">Home</a>
+    <a href="Projects.html">Projects</a>
+
+    <div class="dropDown">
+      <button class="drpButton">About Me</button>
+
+      <div class="dropContent">
+        <a href="Personal.html">Personal</a>
+        <a href="Professional.html">Professional</a>
+      </div>
+    </div>
+
+    <div class="dropDown">
+      <button class="drpButton">Current Learning</button>
+
+      <div class="dropContent">
+        <a href="Bots.html">Bots</a>
+        <a href="Languages.html">Languages</a>
+        <a href="Reading.html">Reading</a>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="descriptDiv">
+    <p>
+      Throughout my ongoing learning I have partially/fully built numerous animations, games, programs etc.<br>
+      Though some of them are still a work in progress, and others are laughably simplistic. <br>
+      They are all presented here to display my journey and continuing growth <br>
+      in the vast world of computer programming.
+    </p>
+    <br>
+    <br>
+    <br>
+  </div>
+
+  <div class="galleryDiv">
+
+    <!--Full Height Slides-->
+    <a href="https://www.khanacademy.org/computer-programming/baby-yoda-run/5227164793323520">
+      <div class="slidesDiv">
+        <img id="largeImage" src="Gallery_Images/Baby Yoda Run.png" alt="Baby Yoda Run">
+      </div>
+    </a>
+
+    <a href="https://www.khanacademy.org/computer-programming/spin-off-of-project-hoppy-beaver-extreme/6179951586852864">
+      <div class="slidesDiv">
+        <img id="largeImage" src="Gallery_Images/Hoppy Beaver Extreme.png" alt="Hoppy Beaver Extreme">
+      </div>
+    </a>
+
+    <a href="https://www.khanacademy.org/computer-programming/spin-off-of-project-magic-8-ball/5235402388553728">
+      <div class="slidesDiv">
+        <img id="largeImage" src="Gallery_Images/Magic 8-Ball.png" alt="Magic 8-Ball">
+      </div>
+    </a>
+
+    <a href="https://www.khanacademy.org/computer-programming/spin-off-of-project-memory/6616892716367872">
+      <div class="slidesDiv">
+        <img id="largeImage" src="Gallery_Images/Memory Game.png" alt="Memory Game">
+      </div>
+    </a>
+
+    <!--Next/Previous}-->
+    <a class="previous" onClick="plusSlides(-1)"><</a>
+        <a class="next" onClick="plusSlides(1)">></a>
+
+        <!--Image Text-->
+        <div class="imageCaption">
+          <p id="caption"></p>
+        </div>
+
+        <!--Smaller Images-->
+        <div class="row">
+
+          <div class="column">
+            <img id="smallImage" class="demo cursor" src="Gallery_Images/Baby Yoda Run.png" onClick="currentSlide(1)" alt="Baby Yoda Run">
+          </div>
+
+          <div class="column">
+            <img id="smallImage" class="demo cursor" src="Gallery_Images/Hoppy Beaver Extreme.png" onClick="currentSlide(2)" alt="Hoppy Beaver Extreme">
+          </div>
+
+          <div class="column">
+            <img id="smallImage" class="demo cursor" src="Gallery_Images/magic 8-Ball.png" onClick="currentSlide(3)" alt="Magic 8-Ball">
+          </div>
+
+          <div class="column">
+            <img id="smallImage" class="demo cursor" src="Gallery_Images/Memory Game.png" onClick="currentSlide(4)" alt="Memory Game">
+          </div>
+        </div>
+  </div>
+
+  <script src="JavaScript/Gallery.js" charset="utf-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+/*MAIN CONTENT BOX*/
+.contentDiv
+{
+  display: flex;
+  flex-direction: row;
+  padding:5vh 0 0 15vw;
+}
+
+.contentDiv img
+{
+  width:15vw;
+  height:30vh;
+  min-width: 500px;
+  min-height: 700px;
+  background-color: gray;
+}
+
+
+/*EMPTY BOX FOR FORMATTING*/
+.blankDiv
+{
+  width:5vw;
+}
+
+
+/*RESUMES*/
+.resume1, .resume2
+{
+  display: flex;
+}
+
+
+/*HOVER EFFECT*/
+.overlayDiv
+{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:15vw;
+  height:30vh;
+  min-width: 500px;
+  min-height: 700px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #111212;
+}
+
+.overlayDiv:hover
+{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.text
+{
+  color: white;
+  font-size: 20px;
+}

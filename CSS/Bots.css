@@ -1,0 +1,128 @@
+/*MAIN BODY*/
+body
+{
+  background-color: #2565c5;
+}
+
+
+/*MENU BAR AND HEADER*/
+.headerDiv
+{
+  background-color:#180cd0;
+}
+
+.navBar a:hover, .dropDown:hover .drpButton
+{
+  background-color:#4b6da0c7;
+}
+.dropContent a:hover
+{
+  background-color:#4b6da0c7;
+}
+
+.navBar a
+{
+  color:black;
+}
+
+.dropDown .drpButton
+{
+  color:black;;
+}
+
+.dropContent
+{
+  background-color:#699be6c7;
+  box-shadow: ;
+}
+
+.dropContent a
+{
+  color:black;
+}
+
+
+/*MAIN CONTENT BOX*/
+.containerDiv
+{
+  display: flex;
+  flex-direction: row;
+}
+
+
+/*LEFT BOX*/
+.leftSide
+{
+  background-image: url("../Background/robots.png");
+  width:40vw;
+}
+
+
+/*RIGHT BOX*/
+.rightSide
+{
+  background-image: url("../Background/robots.png");
+  width:40vw;
+}
+
+
+/*CENTER BOX*/
+.innerDiv
+{
+  width:fit-content;
+}
+
+.gifDiv
+{
+  display: flex;
+  justify-content: center;
+}
+
+img[src^="GIF/Flash"]
+{
+  width:20vw;
+}
+
+.botTable
+{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.botTable table
+{
+  width:50vw;
+  border-collapse: collapse;
+}
+
+.botTable th
+{
+  background-color: red;
+}
+
+.botTable table td
+{
+  text-align: center;
+  background-color: white;
+}
+
+.botTable table,.botTable td, .botTable th
+{
+  border:2px solid black;
+  padding:15px;
+}
+
+.textDiv
+{
+  display: flex;
+  justify-content: center;
+}
+
+.textDiv p
+{
+  text-align: center;
+  font-size: calc(12px + 0.6vmax);
+  padding:8vh;
+  color:cyan;
+}

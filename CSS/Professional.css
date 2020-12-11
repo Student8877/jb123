@@ -1,0 +1,87 @@
+/*MAIN BODY CONTENT*/
+body
+{
+  background-color:#16130c;
+}
+
+
+/*NAVIGATION MENU AND HEADER*/
+.headerDiv
+{
+  background-color:#0b313c;
+}
+
+.navBar a:hover, .dropDown:hover .drpButton
+{
+  background-color:#363535;
+}
+.dropContent a:hover
+{
+  background-color:#888585;
+}
+
+.navBar a
+{
+  color:#595959;
+}
+
+.dropDown .drpButton
+{
+  color:#595959;
+}
+
+.dropContent
+{
+  background-color:#595959 ;
+  box-shadow: ;
+}
+
+.dropContent a
+{
+  color:#0b313c;
+}
+
+
+/*SIDE MENU*/
+.sideMenu a
+{
+  position:absolute;
+  display:flex;
+  justify-content: center;
+  left:-20vw;
+  transition: 0.3s;
+  padding:5vh;
+  width:25vw;
+  text-decoration: none;
+  font-size: calc(10px + 1vw);
+  color:#1e1c1c;
+  border-radius: 0 5px 5px 0;
+}
+
+.sideMenu a:hover
+{
+  left: 0;
+}
+
+#sidePro
+{
+  background-color: #850d0d;
+  top:20%;
+}
+a[href*="Electrical"]
+{
+  background-color: #2e4c90;
+  top:40%;
+}
+
+a[href*="Programming"]
+{
+  background-color: #5a3d09;
+  top:60%;
+}
+
+a[href*="Resume"]
+{
+  background-color: #796f6f;
+  top:80%;
+}

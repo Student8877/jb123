@@ -1,0 +1,102 @@
+*
+{
+  margin:0;
+  box-sizing: border-box;
+}
+
+
+/*MAIN CONTENT*/
+body
+{
+  width:100%;
+  height:100vh;
+}
+
+
+/*HEADER*/
+.headerDiv
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:10vh;
+}
+
+h1
+{
+  font-size: 8.4vh;
+}
+
+
+/*NAVIGATION MENU*/
+.navBar
+{
+  overflow:hidden;
+}
+
+.navBar a
+{
+  float:left;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  width:25%;
+}
+
+.dropDown
+{
+  float:left;
+  overflow: hidden;
+  width:25%;
+}
+
+.dropDown .drpButton
+{
+  font-size: 1.5em;
+  border:none;
+  outline: none;
+  padding:14px 16px;
+  background-color: inherit;
+/*W3 SUGGESTED THE FOLLOWING FOR MOBILE PHONE COMPATIBILITY*/
+  font-family: inherit;
+  margin:0;
+  width:100%;
+}
+
+.dropContent
+{
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  max-width: 25%;
+  z-index: 1;
+  width:25%;
+}
+
+.dropContent a
+{
+  float: none;
+  padding:12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  width:100%;
+}
+
+.dropDown:hover .dropContent
+{
+  display:block;
+  position: absolute;
+  width:100%;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}

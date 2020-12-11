@@ -1,0 +1,65 @@
+/*MAIN BODY CONTENT*/
+body
+{
+  background-color:#16161c;
+}
+
+
+/*NAVIGATION MENU AND HEADER*/
+.headerDiv
+{
+  background-color:#4d3129;
+}
+
+.navBar a:hover, .dropDown:hover .drpButton
+{
+  background-color:#888585;
+}
+.dropContent a:hover
+{
+  background-color:#888585;
+}
+
+.navBar a
+{
+  color:#b0a484;
+}
+
+.dropDown .drpButton
+{
+  color:#b0a484;
+}
+
+.dropContent
+{
+  background-color:#595959 ;
+  box-shadow: ;
+}
+
+.dropContent a
+{
+  color:#b0a484;
+}
+
+
+/*GOODREADS WIDGET CONTAINERS*/
+.goodReadsDiv
+{
+  display: flex;
+  padding-top: 35px;
+}
+
+.read
+{
+  padding-left: 40px;
+}
+
+.wantToRead
+{
+  padding: 0 10px 0 50px;
+}
+
+.reading
+{
+  padding: 0 40px 0 10px;
+}
