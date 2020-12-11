@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Jamie's Website</title>
+  <link rel="stylesheet" href="CSS/Master.css">
+  <link rel="stylesheet" href="CSS/Home.css">
+</head>
+
+<body>
+  <video autoplay muted loop id="myVideo">
+    <source src="Video\Partical Project 017-1.m4v" type="Video/mp4">
+    Not supported
+  </video>
+
+  <div class="headerDiv">
+    <h1>Jamie Braaksma</h1>
+  </div>
+
+  <div class="navBar">
+    <a href="index.html">Home</a>
+    <a href="Projects.html">Projects</a>
+
+    <div class="dropDown">
+      <button class="drpButton">About Me</button>
+
+      <div class="dropContent">
+        <a href="Personal.html">Personal</a>
+        <a href="Professional.html">Professional</a>
+      </div>
+    </div>
+
+    <div class="dropDown">
+      <button class="drpButton">Current Learning</button>
+
+      <div class="dropContent">
+        <a href="Bots.html">Bots</a>
+        <a href="Languages.html">Languages</a>
+        <a href="Reading.html">Reading</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="containerDiv">
+
+    <div class="innerDiv">
+
+      <div class="welcomeDiv">
+        <h3>Welcome to my Website!</h3>
+        <br>
+        <p>
+          Take a look around as I display my journey learning the ins & outs of web design. <br>
+        </p>
+        <ul>
+          <li>
+            You can view my past/current learning objectives in the Current Learning section.
+          </li>
+          <li>
+            Learn more about me on a professional and personal level in the About Me section.
+          </li>
+          <li>
+            Whether it was a requirement in a course, a professional development, or me just
+            having some fun programming. Check out all my current/past projects in the Projects section.
+          </li>
+        </ul>
+        <br>
+        <p>
+          This site will be a constant work-in-progress as my skills improve and my portfolio grows.
+          So, feel free to keep checking in to see my progress into the exciting world of programming.<br>
+          And whether you're a potential client, fellow student, casually perusing, or a grading professor
+          (by the way you look quite dapper today :) ) thank you for visiting and have a great day! <br><br>
+          Happy Coding
+        </p>
+      </div>
+
+      <div class="profileDiv">
+
+        <div>
+          <img id="profilePic" src="Images/Profile_Pic.jpg" alt="A picture of Jamie Braaksma">
+        </div>
+
+        <ul>
+          <li id="name">Jamie Braaksma</li>
+          <li id="age">&nbsp &nbsp 29</li>
+          <li id="occupation">
+            <ol>
+              <li>Full-time Student</li>
+              <li>Electrician</li>
+              <li>Amateur Keyboard Smasher </li>
+            </ol>
+        </ul>
+      </div>
+
+      <div class="contactDiv">
+        <h3>Give Me Feedback</h3>
+        <p>
+          Whether it's to recommend a book, suggest a course, critique a design, or you think we should be best friends.
+          Please feel free to send me a message with the button below.<br><br>
+          I look forward to hearing from you!.<br>
+        </p>
+        <button class="btnOpen" onclick="openForm()">Contact Me</button>
+
+        <div class="popUpForm">
+          <form class="contactForm" action="mailto:webresponse@outlook.com" enctype="text/plain" method="post">
+            <h1>Contact Me</h1>
+
+            <label for="name"><b>Your name</b></label>
+            <input type="text" placeholder="Your name" name="name">
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Your email" name="email">
+
+            <label for="message"><b>Your message</b></label>
+            <textarea name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+            <button class="btn" type="submit">Send</button>
+            <button class="btnClose" type="button" onClick="closeForm()">Close</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="JavaScript/PopUp.js" charset="utf-8"></script>
+</body>
+
+</html>
