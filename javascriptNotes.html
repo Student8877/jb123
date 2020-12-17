@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Javascript Notes</title>
+  <link rel="stylesheet" href="CSS/Notes.css">
+</head>
+
+<body>
+  <h1>Javascript (and Processing.js) Notes</h1>
+  <h3>To end a program (like in GAME OVER)</h3>
+  <p>
+    noLoop(); means you no longer need the services of draw
+  </p>
+
+  <h3>What the % command accomplishes. (Good for looping animations from of canvas to start.)</h3>
+  <p>
+    In JS and many other related languages, there is the Modulo operator, that shows the remainder of an integer division.<br>
+    It is %<br>
+    So for example, 6%4 = 2, and 9%4 = 1.<br>
+    This allows you to check if number A is divisible by B, or in other words, if B is a multiple of A, by calculating the Modulo of A to B, and comparing it to zero.<br>
+<br>
+    so <br>
+    <br>
+
+    if(x % 5 === 0)
+  </p>
+
+  <h3>Ternary Operators</h3>
+  <p>
+    The ternary operators ? - : are short cut for if - then - else involving expressions. For example to set m to the maximum value of a and b I could write <br>
+    if (a &gt;  b) {<br>
+    m = a;<br>
+    } else {<br>
+    m = b;<br>
+    }<br>
+    But those five lines of code are so tedious for such a simple assignment. So instead I take a short cut and write <br>
+    m = (a &gt;  b) ? a : b; <br>
+  </p>
+
+  <h3>Splicing arrays</h3>
+  <p>
+    The Array.splice() method is an inbuilt method in JavaScript which is used to modify the contents of an array by removing the existing elements and/or by adding new elements.
+  </p>
+
+  <h3>Syntax</h3>
+  <p>
+    Array.splice( index, remove_count, item_list )<br>
+    index: It is a required parameter. This parameter is the index which start modifying the array (with origin at 0). This can be negative also, which begin after that many elements counting from the end.<br>
+    remove_count: The number of elements to be removed from the starting index.<br>
+    items_list: The list of new items separated by comma operator that is to be inserted from the starting index.<br>
+  </p>
+
+  <h3>How to shuffle an array.</h3>
+  <p>
+    var shuffleArray = function(array) {<br>
+    var counter = array.length;<br>
+<br>
+    (While there are elements in the array)<br>
+    while (counter &gt;  0) {<br>
+    (Pick a random index)<br>
+    var ind = Math.floor(Math.random() * counter);<br>
+    (Decrease counter by 1)<br>
+    counter--;<br>
+    (And swap the last element with it)<br>
+    var temp = array[counter];<br>
+    array[counter] = array[ind];<br>
+    array[ind] = temp;<br>
+    }<br>
+    };
+  </p>
+
+  <h3>Move the coordinates of the canvas GRID to move objects without their x & y coordinates changing.</h3>
+<p>
+  pushMatrix(); (saves the currrent grid coordinates)<br>
+  translate(x, y); (Moves the grid)<br>
+  rotate(degrees or rad) (rotates the grid)<br>
+  scale(x,y) (scale up by ratios (1 number does the whole object))<br>
+  popMatrix(); (moves the grid back to the position of pushMatrix())<br>
+  </p>
+
+  <h3>shapes</h3>
+  <p>
+    point(x,y)<br>
+    line(x1,y1,x2,y2)<br>
+    triangle(x1,y1,x2,y2,x3,y3)<br>
+    ellipse(x,y,w,h)<br>
+    arc(x,y,w,h,start,stop)<br>
+    rect(x,y,w,h)<br>
+    quad (x1,y1,x2,y2,x3,y3,x4,y4)<br>
+    bezier(x1,y1,cx1,cy1,cx2,cy2,x2,y2)<br>
+  </p>
+
+  <h3>Using Javascript in html</h3>
+  <p>
+    &lt;script&gt; &lt;/script&gt;  (Put at bottom before &lt;/body&gt; insert javascript code inside or external link)
+</p>
+
+<h3>Console</h3>
+<p>
+  console.log()
+</p>
+
+<h3>manipulate DOM(Document Object Model)</h3>
+<p>
+  eg. document.body.innerHTML="text"<br>
+  1.Find DOM using an access method <br>
+  2.Manipulate DOM node by changing it's attributes, styles inner HTML, or new nodes. <br>
+
+  eg.<br>
+  var objectEl = document.getElementById("IDNAME"; <br>
+  console.log(objectEl) (Node would be identified in console) <br>
+  IDNAME.innerHTML = "Changes to be made" <br>
+<br>
+  or <br>
+<br>
+  eg.<br>
+  var objectEl = document.getElementByTagName ("tagname")<br>
+  tagname.innerHTML= changes to be made <br>
+<br>
+   or <br>
+<br>
+  eg.<br>
+  document.querySelectorAll("css identifier") (Use css code to find something (Like a[href*="linkDescriptor"))
+</p>
+
+<h3>Change atrributes in DOM</h3>
+<p>
+  eg.<br>
+  var imageName = document.getElementsByTagName ("img");
+</p>
+
+<h3>Changing image source</h3>
+<p>
+  for (var i = 0; i &lt; imageName.length; i++) { imageName.src="new link" </p>
+
+    <h3>Change styles in DOM</h3>
+      <p>
+        eg.
+        var Headingel = document.querySelector ("#heading);
+        headingEl.style.color = "red"
+        headingEl.style.backgroundColor = "blue"
+        etc.
+      </p>
+
+      <h3>Changing CSS classes</h3>
+      <p>
+        eg.
+        Create CSS .class = CLASSNAME (Create css class with attributes to manipulate)
+        headingEl.className = "CLASSNAME" (Set class name of element)
+        var nameEls = document.querySelectorAll("location .PREVIOUSCLASS");
+        for (var i = 0; i &lt; nameEls.length; i++) { nameEls[i].className +=" CLASSNAME" ; (Add class to elements without replacing PREVIOUS CLASS)
+       </p>
+
+          <h3>Difference between insert text commands</h3>
+          <p>
+            .innerHTML = (You can use html tags to change inner text)
+            .textContent = (You can only input text)
+          </p>
+
+          <h3>Insert new image</h3>
+          <p>
+            var ImageName = document.createElement ("img");
+            ImagName.src = "LINKTOSOURCE";
+            or
+            ImageName.setAttribute("src","LINKTOSOURCE");
+            ImageName.alt = "ALTFORIMAGE'
+            document.body.appendChild(ImageName); (apppendChild puts image at end of body)
+            or
+            .insertBefore,replaceChild,removeChild etc.
+          </p>
+
+          <h3>Adding Event Listener</h3>
+          <p>
+            1.Find and store the variable we want to listen to events on
+            eg.var clickerButton = document.getElementById ('clicker')
+            2.Define the function that will respond to the event
+            var oneButtonClick = function(){
+            clickerButton.textContent = "TEXTTODISPLAY"
+            3.Add the event listener for the element and function
+            clickerButton.addEventListener("click",oneButtonClick);
+          </p>
+
+          <h3>Creating tracking NPC</h3>
+          <h3>NPC attack function</h3>
+          <p>
+            NPC.prototype.attack = function(target) {
+            if ((this.x - target.x) === 2 || (target.x - this.x) === 2){
+            this.x +=500;
+            }
+            else if (this.x - target.x > 2) {
+            this.x -= 2;
+            }
+            else if (target.x - this.x >= 2) {
+            this.x += 2;
+            }
+            };
+          </p>
+
+          <h3>Delay function by time</h3>
+          <p>
+            var start = millis();
+            var draw = function()
+            {
+            if(millis() - start >= time)
+            {
+            do something
+            }
+            }
+          </p>
+          <h3>Additional useful links</h3>
+          <ul>
+          <li><a href="https://www.w3schools.com/js/DEFAULT.asp">W3 Schools</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a></li>
+          <li><a href="https://p5js.org/reference/#/libraries/p5.sound">P5.js</a></li>
+          <li><a href="https://developers.google.com/speed/libraries/">Google JS Libraries</a>
+          <li><a href="https://scotch.io/tutorials/implementing-a-scroll-based-animation-with-javascript">Scroll Animation</a>
+          <li><a href="https://www.khanacademy.org/computer-programming/handbook-of-collisions-and-interiors/5567955982876672">Processing.js Collisions</a>
+</ul>
+          </body>
+
+</html>
