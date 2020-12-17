@@ -1,0 +1,31 @@
+body
+{
+  background-color: black;
+  text-align: center;
+}
+
+h3, h1
+{
+  color:green;
+}
+
+p
+{
+  color:white;
+
+}
+
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  width:15vw;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
